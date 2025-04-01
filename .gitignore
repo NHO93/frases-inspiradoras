@@ -1,0 +1,62 @@
+# Arquivos .gitignore para projeto Python/Flask
+
+# Ambiente virtual
+venv/
+.env/
+.venv/
+
+# Arquivos do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configurações do VS Code
+.vscode/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development
+.env.production
+
+# Arquivos de banco de dados
+*.sqlite
+*.db
+
+# Arquivos de log
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos gerados pelo Flask
+instance/
+
+# Cache e diretórios temporários
+*.tmp
+*.temp
+.cache/
+
+# Arquivos do macOS
+._*
+
+# Arquivos do Windows
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Diretório de testes
+tests/.pytest_cache/
+
+# Arquivos de IDE
+.idea/
+*.swp
+*.swo
+
+# Arquivos de desenvolvimento
+*.sql
+*.dump

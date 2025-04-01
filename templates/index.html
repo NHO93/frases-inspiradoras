@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiração Diária</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Inspiração Diária</h1>
+            <p>Receba uma dose diária de sabedoria</p>
+        </header>
+        <!-- Menu de navegação -->
+        <main>
+            <div class="controls">
+                <select id="categoria">
+                    <option value="amor">Amor</option>
+                    <option value="motivacao">Motivação</option>
+                    <option value="felicidade">Felicidade</option>
+                    <option value="sabedoria">Sabedoria</option>
+                    <option value="amizade">Amizade</option>
+                </select>
+                
+                <button id="buscar">
+                    <i class="fas fa-search"></i> Buscar Frase
+                </button>
+            </div>
+            
+            <div class="frase-container">
+                <div id="frase">Clique no botão para receber uma frase inspiradora...</div>
+                <div id="autor"></div>
+            </div>
+            
+            <div class="actions">
+                <button id="copiar">
+                    <i class="far fa-copy"></i> Copiar
+                </button>
+                <button id="compartilhar">
+                    <i class="fas fa-share-alt"></i> Compartilhar
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 Inspiração Diária | Frases para iluminar seu dia</p>
+        </footer>
+    </div>
+    <!-- Modal para compartilhar -->
+    <div id="share-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Compartilhar Frase</h3>
+            <div class="share-options">
+                <button class="share-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button class="share-btn facebook">
+                    <i class="fab fa-facebook"></i> Facebook
+                </button>
+                <button class="share-btn twitter">
+                    <i class="fab fa-twitter"></i> X
+                </button>
+                <button class="share-btn instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </button>
+                <button class="share-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
