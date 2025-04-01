@@ -97,5 +97,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-**Nota**: Esta aplicação é destinada apenas para fins educacionais. O web scraping pode violar os termos de serviço de alguns sites. Use com responsabilidade.# frases-inspiradoras
-# frases-inspiradoras
+**Nota**: Esta aplicação é destinada apenas para fins educacionais. O web scraping pode violar os termos de serviço de alguns sites. Use com responsabilidade.
